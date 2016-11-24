@@ -154,13 +154,13 @@ module Danger
       def character_from_emoji(emoji)
         emoji.delete! ":"
         if emoji == "no_entry_sign"
-          "🚫"
+          "ERROR"
         elsif emoji == "warning"
-          "⚠️"
+          "WARNING"
         elsif emoji == "book"
-          "📖"
+          "INFO"
         elsif emoji == "white_check_mark"
-          "✅"
+          "SUCCESS"
         end
       end
 
